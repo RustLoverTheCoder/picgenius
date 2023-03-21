@@ -152,40 +152,60 @@ export default function Home() {
             </div> */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
               {/* 图片 */}
-              <div className="w-full h-[400px] flex items-center space-x-4">
-                <div className="w-[300px] h-[400px] shrink-0">
+              <div className="w-full h-[645px] flex items-center space-x-4">
+                <div className="w-[300px] h-[645px] shrink-0">
                   <Image
                     style={{
                       borderRadius: "12px",
                       objectFit: "cover",
                       objectPosition: "center",
                       width: "300px",
-                      height: "400px",
+                      height: "645px",
                     }}
                     src="/1.webp"
                     alt="1"
                     width={300}
-                    height={400}
+                    height={645}
                     priority
                     quality={90}
                   />
                 </div>
-                <div className="flex-1 ">
-                  <div>1</div>
+                <div className="flex-1 flex flex-col space-y-4 h-full">
+                  <div className="w-full aspect-video h-[337px]">
+                    <Image
+                      style={{
+                        borderRadius: "12px",
+                        objectFit: "cover",
+                        objectPosition: "top",
+                        width: "100%",
+                        height: "100%",
+                      }}
+                      src="/3.webp"
+                      alt="1"
+                      width={600}
+                      height={337}
+                      priority
+                      quality={90}
+                    />
+                  </div>
+                  <div className="flex-1 flex items-center space-x-4">
+                    <div className="w-[292px] h-[292px] bg-white">1</div>
+                    <div className="w-[292px] h-[292px] bg-yellow-50">1</div>
+                  </div>
                 </div>
-                <div className="w-[300px] h-[400px]">
+                <div className="w-[300px] h-[645px]">
                   <Image
                     style={{
                       borderRadius: "12px",
                       objectFit: "cover",
                       objectPosition: "center",
                       width: "300px",
-                      height: "400px",
+                      height: "645px",
                     }}
                     src="/2.webp"
                     alt="1"
                     width={300}
-                    height={400}
+                    height={645}
                     priority
                     quality={90}
                   />
