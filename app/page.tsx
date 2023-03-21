@@ -248,7 +248,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full h-96"></div>
-        <div className="bg-gray-800">
+        <div className="">
           <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
             <h2 className="text-center text-gray-400 text-sm font-semibold uppercase tracking-wide">
               Trusted by over 26,000 forward-thinking companies
