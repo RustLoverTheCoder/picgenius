@@ -7,12 +7,13 @@ import clsx from "clsx";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "Short", href: "#" },
-  { name: "Playgroud", href: "#" },
-  { name: "Pricing", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "Shortcase", href: "/showcase" },
+  { name: "Playgroud", href: "/playground" },
+  { name: "Pricing", href: "/pricing" },
 ];
 
 const inter = Inter({ subsets: ["latin"] });
@@ -57,13 +58,13 @@ export default function Home() {
                   </div>
                   <div className="hidden md:flex md:space-x-10">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         className="font-medium text-white hover:text-gray-300"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                   <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
@@ -110,13 +111,13 @@ export default function Home() {
                     </div>
                     <div className="px-2 pt-2 pb-3 space-y-1">
                       {navigation.map((item) => (
-                        <a
+                        <Link
                           key={item.name}
                           href={item.href}
                           className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                     <a
@@ -180,7 +181,7 @@ export default function Home() {
                         width: "100%",
                         height: "100%",
                       }}
-                      src="/3.webp"
+                      src="/6.webp"
                       alt="1"
                       width={600}
                       height={337}
@@ -189,8 +190,40 @@ export default function Home() {
                     />
                   </div>
                   <div className="flex-1 flex items-center space-x-4">
-                    <div className="w-[292px] h-[292px] bg-white">1</div>
-                    <div className="w-[292px] h-[292px] bg-yellow-50">1</div>
+                    <div className="w-[292px] h-[292px]">
+                      <Image
+                        style={{
+                          borderRadius: "12px",
+                          objectFit: "cover",
+                          objectPosition: "top",
+                          width: "100%",
+                          height: "100%",
+                        }}
+                        src="/4.webp"
+                        alt="1"
+                        width={292}
+                        height={292}
+                        priority
+                        quality={90}
+                      />
+                    </div>
+                    <div className="w-[292px] h-[292px]">
+                      <Image
+                        style={{
+                          borderRadius: "12px",
+                          objectFit: "cover",
+                          objectPosition: "top",
+                          width: "100%",
+                          height: "100%",
+                        }}
+                        src="/3.webp"
+                        alt="1"
+                        width={292}
+                        height={292}
+                        priority
+                        quality={90}
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="w-[300px] h-[645px]">
@@ -202,7 +235,7 @@ export default function Home() {
                       width: "300px",
                       height: "645px",
                     }}
-                    src="/2.webp"
+                    src="/5.webp"
                     alt="1"
                     width={300}
                     height={645}
