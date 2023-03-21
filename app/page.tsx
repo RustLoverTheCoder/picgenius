@@ -195,7 +195,7 @@ export default function Home() {
                         style={{
                           borderRadius: "12px",
                           objectFit: "cover",
-                          objectPosition: "top",
+                          objectPosition: "center",
                           width: "100%",
                           height: "100%",
                         }}
@@ -212,7 +212,7 @@ export default function Home() {
                         style={{
                           borderRadius: "12px",
                           objectFit: "cover",
-                          objectPosition: "top",
+                          objectPosition: "center",
                           width: "100%",
                           height: "100%",
                         }}
