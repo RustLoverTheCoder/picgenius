@@ -9,10 +9,10 @@ import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Home", href: "#" },
+  { name: "Short", href: "#" },
+  { name: "Playgroud", href: "#" },
+  { name: "Pricing", href: "#" },
 ];
 
 const inter = Inter({ subsets: ["latin"] });
@@ -146,16 +146,55 @@ export default function Home() {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 flex flex-col" aria-hidden="true">
+            {/* <div className="absolute inset-0 flex flex-col" aria-hidden="true">
               <div className="flex-1" />
               <div className="flex-1 w-full bg-gray-800" />
-            </div>
+            </div> */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
               {/* 图片 */}
-              <div className="w-full h-[800px]"></div>
+              <div className="w-full h-[400px] flex items-center space-x-4">
+                <div className="w-[300px] h-[400px] shrink-0">
+                  <Image
+                    style={{
+                      borderRadius: "12px",
+                      objectFit: "cover",
+                      objectPosition: "center",
+                      width: "300px",
+                      height: "400px",
+                    }}
+                    src="/1.webp"
+                    alt="1"
+                    width={300}
+                    height={400}
+                    priority
+                    quality={90}
+                  />
+                </div>
+                <div className="flex-1 ">
+                  <div>1</div>
+                </div>
+                <div className="w-[300px] h-[400px]">
+                  <Image
+                    style={{
+                      borderRadius: "12px",
+                      objectFit: "cover",
+                      objectPosition: "center",
+                      width: "300px",
+                      height: "400px",
+                    }}
+                    src="/2.webp"
+                    alt="1"
+                    width={300}
+                    height={400}
+                    priority
+                    quality={90}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <div className="w-full h-96"></div>
         <div className="bg-gray-800">
           <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
             <h2 className="text-center text-gray-400 text-sm font-semibold uppercase tracking-wide">
