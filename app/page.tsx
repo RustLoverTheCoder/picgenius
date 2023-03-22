@@ -12,7 +12,7 @@ import Link from "next/link";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Shortcase", href: "/showcase" },
-  { name: "Playgroud", href: "/playground" },
+  { name: "Playground", href: "/playground" },
   { name: "Pricing", href: "/pricing" },
 ];
 
