@@ -177,11 +177,11 @@ export default function Home() {
                       style={{
                         borderRadius: "12px",
                         objectFit: "cover",
-                        objectPosition: "top",
+                        objectPosition: "center",
                         width: "100%",
                         height: "100%",
                       }}
-                      src="/6.webp"
+                      src="/7.png"
                       alt="1"
                       width={600}
                       height={337}
