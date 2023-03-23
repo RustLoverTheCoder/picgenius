@@ -40,14 +40,14 @@ export default function Home() {
                 >
                   <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
                     <div className="flex items-center justify-between w-full md:w-auto">
-                      <a href="#">
+                      <Link href="/">
                         <span className="sr-only">Workflow</span>
                         <img
                           className="h-8 w-auto sm:h-10"
                           src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                           alt=""
                         />
-                      </a>
+                      </Link>
                       <div className="-mr-2 flex items-center md:hidden">
                         <Popover.Button className="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                           <span className="sr-only">Open main menu</span>
@@ -69,12 +69,12 @@ export default function Home() {
                   </div>
                   <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
                     <span className="inline-flex rounded-md shadow">
-                      <a
-                        href="#"
+                      <Link
+                        href="/login"
                         className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500"
                       >
                         Log in
-                      </a>
+                      </Link>
                     </span>
                   </div>
                 </nav>
@@ -120,12 +120,12 @@ export default function Home() {
                         </Link>
                       ))}
                     </div>
-                    <a
-                      href="#"
+                    <Link
+                      href="/login"
                       className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700"
                     >
                       Log in
-                    </a>
+                    </Link>
                   </div>
                 </Popover.Panel>
               </Transition>
@@ -153,7 +153,7 @@ export default function Home() {
             </div> */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
               {/* 图片 */}
-              <div className="w-full h-[645px] flex items-center space-x-4">
+              <div className="w-full h-[645px] flex items-center space-x-4 lg:hidden">
                 <div className="w-[300px] h-[645px] shrink-0">
                   <Image
                     style={{
