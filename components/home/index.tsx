@@ -68,6 +68,11 @@ const HomeUi = () => {
       imageUrl:
         "https://cdn.midjourney.com/f891823f-e080-4eac-9e26-a3238dd9b895/0_2_640_N.webp",
     },
+    {
+      title: "",
+      imageUrl:
+        "https://cdn.midjourney.com/9e77177a-5294-4ce6-8953-e632a24fb827/0_2_640_N.webp",
+    },
   ];
   return (
     <HomeLayout>
