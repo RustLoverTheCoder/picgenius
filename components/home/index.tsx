@@ -189,7 +189,7 @@ const HomeUi = () => {
       >
         <div className="flex flex-col gap-8 items-center">
           <h1 className="max-md:text-3xl max-lg:text-5xl lg:text-[64px] max-w-[10.7em] leading-[1.1] text-center font-[590] ">
-            将您的想法 <br /> 创建艺术
+            让 AI 将您的想法 <br /> 变为艺术
           </h1>
           <Link
             href="/playground"
