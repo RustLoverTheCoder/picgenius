@@ -20,7 +20,7 @@ const Header: FC = () => {
             </div>
             <input
               id="search"
-              placeholder="Search"
+              placeholder="搜索"
               className="placeholder:text-gray-50 flex-grow min-w-[10px] w-[100%] bg-transparent outline-none text-[15px]"
             />
           </div>
@@ -31,7 +31,7 @@ const Header: FC = () => {
           href="/login"
           className="border border-[#2A2832] hover:border-white text-white h-9 px-3 py-1 rounded-md transform transition-all w-[100px] flex justify-center items-center"
         >
-          <div className="text-sm">Log in</div>
+          <div className="text-sm">登录</div>
         </Link>
       </div>
     </header>
