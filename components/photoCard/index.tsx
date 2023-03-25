@@ -1,24 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Dialog } from "@headlessui/react";
+import { useInViewport } from "ahooks";
+import clsx from "clsx";
 
 export interface Photo {
   imageUrl: string;
   title: string;
+  thumbnail?: string;
 }
 
-const PhotoCard: React.FC<Photo> = ({ imageUrl, title }) => {
-  let [isOpen, setIsOpen] = useState(false);
+const PhotoCard: React.FC<Photo> = ({ imageUrl, title, thumbnail }) => {
+  const imgWrpRef = useRef(null);
+  const [inViewport] = useInViewport(imgWrpRef, {
+    rootMargin: "100px",
+  });
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <div
         className="relative w-full h-auto rounded-lg cursor-pointer group bg-[#110f1a]"
         onClick={() => setIsOpen(true)}
+        ref={imgWrpRef}
       >
-        <img
-          className="w-full object-cover rounded-lg"
-          src={imageUrl}
-          alt={title}
-        ></img>
+        {inViewport && (
+          <img
+            className={clsx(
+              "w-full object-cover rounded-lg z-10 transition-all opacity-100"
+            )}
+            src={imageUrl}
+            alt={title}
+          />
+        )}
+        <noscript>
+          <img
+            className={clsx(
+              "w-full object-cover rounded-lg z-10 transition-all opacity-100"
+            )}
+            src={imageUrl}
+            alt={title}
+          />
+        </noscript>
       </div>
       <Dialog
         open={isOpen}
