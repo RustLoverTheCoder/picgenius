@@ -7,7 +7,7 @@ export interface Photo {
 
 const PhotoCard: React.FC<Photo> = ({ imageUrl, title }) => {
   return (
-    <div className="relative w-full h-auto rounded-lg">
+    <div className="relative w-full h-auto rounded-lg cursor-pointer group">
       <img className="w-full object-cover rounded-lg" src={imageUrl} alt={title}></img>
     </div>
   );
