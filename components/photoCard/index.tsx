@@ -1,5 +1,5 @@
-import React, { useState, useRef } from "react";
-import { Dialog } from "@headlessui/react";
+import React, { useState, useRef, useEffect } from "react";
+import { Dialog, Transition } from "@headlessui/react";
 import { useInViewport } from "ahooks";
 import clsx from "clsx";
 
@@ -15,6 +15,13 @@ const PhotoCard: React.FC<Photo> = ({ imageUrl, title, thumbnail }) => {
     rootMargin: "100px",
   });
   const [isOpen, setIsOpen] = useState(false);
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    if (!!inViewport) {
+      setShow(true);
+    }
+  }, [inViewport]);
 
   return (
     <>
@@ -23,7 +30,15 @@ const PhotoCard: React.FC<Photo> = ({ imageUrl, title, thumbnail }) => {
         onClick={() => setIsOpen(true)}
         ref={imgWrpRef}
       >
-        {inViewport && (
+        <Transition
+          show={show}
+          enter="transition-opacity ease-linear duration-300"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-opacity ease-linear duration-300"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
           <img
             className={clsx(
               "w-full object-cover rounded-lg z-10 transition-all opacity-100"
@@ -31,7 +46,7 @@ const PhotoCard: React.FC<Photo> = ({ imageUrl, title, thumbnail }) => {
             src={imageUrl}
             alt={title}
           />
-        )}
+        </Transition>
         <noscript>
           <img
             className={clsx(
