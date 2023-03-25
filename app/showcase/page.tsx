@@ -1,6 +1,6 @@
 const Page = () => {
   return (
-    <div>
+    <div className="w-full h-auto min-h-full lg:min-h-screen">
       <div>showcase</div>
     </div>
   );

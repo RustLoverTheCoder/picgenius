@@ -10,10 +10,9 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Shortcase", href: "/showcase" },
-  { name: "Playground", href: "/playground" },
-  { name: "Pricing", href: "/pricing" },
+  { name: "展示", href: "/showcase" },
+  { name: "探索", href: "/playground" },
+  { name: "价格", href: "/pricing" },
 ];
 
 const inter = Inter({ subsets: ["latin"] });
@@ -124,7 +123,7 @@ export default function Home() {
                       href="/login"
                       className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700"
                     >
-                      Log in
+                      登录
                     </Link>
                   </div>
                 </Popover.Panel>
@@ -134,164 +133,29 @@ export default function Home() {
             <div className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6">
               <div className="text-center">
                 <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
-                  <span className="block">Data to enrich your</span>
-                  <span className="block text-indigo-400">online business</span>
+                  <span className="block">通过 AI 创造令人惊叹的艺术</span>
+                  {/* <span className="block text-indigo-400">o</span> */}
                 </h1>
-                <p className="mt-3 max-w-md mx-auto text-base text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                <p className="mt-3 max-w-md mx-auto text-base text-gray-300 sm:text-lg md:mt-6 md:text-xl md:max-w-3xl">
+                  发挥你的想象里，探索ai在艺术的潜力
                 </p>
+                <div className="mt-10 md:flex items-center max-w-lg mx-auto flex justify-center">
+                  <Link
+                    href="/playground"
+                    className="inline-flex items-center px-8 py-4 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500"
+                  >
+                    免费尝试
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
 
           <div className="relative">
-            {/* <div className="absolute inset-0 flex flex-col" aria-hidden="true">
-              <div className="flex-1" />
-              <div className="flex-1 w-full bg-gray-800" />
-            </div> */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6">
-              {/* 图片 */}
-              <div className="w-full h-[645px] flex items-center space-x-4 lg:hidden">
-                <div className="w-[300px] h-[645px] shrink-0">
-                  <Image
-                    style={{
-                      borderRadius: "12px",
-                      objectFit: "cover",
-                      objectPosition: "center",
-                      width: "300px",
-                      height: "645px",
-                    }}
-                    src="/1.webp"
-                    alt="1"
-                    width={300}
-                    height={645}
-                    priority
-                    quality={90}
-                  />
-                </div>
-                <div className="flex-1 flex flex-col space-y-4 h-full">
-                  <div className="w-full aspect-video h-[337px]">
-                    <Image
-                      style={{
-                        borderRadius: "12px",
-                        objectFit: "cover",
-                        objectPosition: "center",
-                        width: "100%",
-                        height: "100%",
-                      }}
-                      src="/7.png"
-                      alt="1"
-                      width={600}
-                      height={337}
-                      priority
-                      quality={90}
-                    />
-                  </div>
-                  <div className="flex-1 flex items-center space-x-4">
-                    <div className="w-[292px] h-[292px]">
-                      <Image
-                        style={{
-                          borderRadius: "12px",
-                          objectFit: "cover",
-                          objectPosition: "center",
-                          width: "100%",
-                          height: "100%",
-                        }}
-                        src="/4.webp"
-                        alt="1"
-                        width={292}
-                        height={292}
-                        priority
-                        quality={90}
-                      />
-                    </div>
-                    <div className="w-[292px] h-[292px]">
-                      <Image
-                        style={{
-                          borderRadius: "12px",
-                          objectFit: "cover",
-                          objectPosition: "center",
-                          width: "100%",
-                          height: "100%",
-                        }}
-                        src="/3.webp"
-                        alt="1"
-                        width={292}
-                        height={292}
-                        priority
-                        quality={90}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="w-[300px] h-[645px]">
-                  <Image
-                    style={{
-                      borderRadius: "12px",
-                      objectFit: "cover",
-                      objectPosition: "center",
-                      width: "300px",
-                      height: "645px",
-                    }}
-                    src="/5.webp"
-                    alt="1"
-                    width={300}
-                    height={645}
-                    priority
-                    quality={90}
-                  />
-                </div>
-              </div>
-            </div>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6"></div>
           </div>
         </div>
         <div className="w-full h-96"></div>
-        <div className="">
-          <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-            <h2 className="text-center text-gray-400 text-sm font-semibold uppercase tracking-wide">
-              Trusted by over 26,000 forward-thinking companies
-            </h2>
-            <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img
-                  className="h-12"
-                  src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
-                  alt="Tuple"
-                />
-              </div>
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img
-                  className="h-12"
-                  src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
-                  alt="Mirage"
-                />
-              </div>
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img
-                  className="h-12"
-                  src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                  alt="StaticKit"
-                />
-              </div>
-              <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-                <img
-                  className="h-12"
-                  src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                  alt="Transistor"
-                />
-              </div>
-              <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-                <img
-                  className="h-12"
-                  src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                  alt="Workcation"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
   );
