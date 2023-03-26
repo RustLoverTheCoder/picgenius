@@ -15,7 +15,7 @@ const PhotoCard: React.FC<Photo> = ({ imageUrl, title, thumbnail }) => {
     rootMargin: "100px",
   });
   const [isOpen, setIsOpen] = useState(false);
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     if (!!inViewport) {
