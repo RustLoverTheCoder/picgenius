@@ -12,7 +12,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'base-100': '#05020E',
+        'base-100': '#1e1f22',
+        'base-200': "#2b2d31",
+        "primary-100": "#5865f2",
       },
     },
   },

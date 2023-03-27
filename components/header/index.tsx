@@ -1,39 +1,30 @@
-import React, { FC } from "react";
-import Link from "next/link";
-import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import { FC } from 'react'
+import Link from 'next/link'
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 
 const Header: FC = () => {
   return (
     <header
-      className="z-40 flex items-start justify-between gap-4 bg-[#05020E] border-gray-900 h-[60px] px-5 py-2.5 fixed top-0 left-0 w-full max-w-full"
-      style={{ boxShadow: "0 1px 8px 0 rgba(0,0,0,.1)" }}
+      className="fixed top-0 left-0 z-40 flex h-[60px] w-full max-w-full items-start justify-between gap-4 border-gray-900 bg-base-100 px-5 py-2.5"
+      style={{ boxShadow: '0 1px 8px 0 rgba(30, 31, 34,.1)' }}
     >
-      <div className="flex items-center h-full md:gap-4">
-        <div
-          className="border border-[#2A2832] flex-shrink md:w-[999rem] flex-grow items-start rounded-lg text-[#F3F2F3] self-start ml-2 font-normal transition-all md:max-w-[333px] bg-base-100"
-        >
+      <div className="flex h-full items-center md:gap-4">
+        <div className="ml-2 flex-shrink flex-grow items-start self-start rounded-lg border border-[#2A2832] bg-base-100 font-normal text-[#F3F2F3] transition-all md:w-[999rem] md:max-w-[333px]">
           <div className="flex items-center gap-2 px-0.5">
-            <div className="pointer-events-none flex items-center pl-2 h-9 shrink-0">
-              <MagnifyingGlassIcon className="w-4 h-4 inline-block shrink-0 text-[#828086]"></MagnifyingGlassIcon>
+            <div className="pointer-events-none flex h-9 shrink-0 items-center pl-2">
+              <MagnifyingGlassIcon className="inline-block h-4 w-4 shrink-0 text-[#828086]"></MagnifyingGlassIcon>
             </div>
-            <input
-              id="search"
-              placeholder="搜索"
-              className="placeholder:text-gray-50 flex-grow min-w-[10px] w-[100%] bg-transparent outline-none text-[15px]"
-            />
+            <input id="search" placeholder="搜索" className="w-[100%] min-w-[10px] flex-grow bg-transparent text-[15px] outline-none placeholder:text-gray-50" />
           </div>
         </div>
       </div>
-      <div className="flex-none flex justify-center items-center">
-        <Link
-          href="/login"
-          className="border border-[#2A2832] hover:border-white text-white h-9 px-3 py-1 rounded-md transform transition-all w-[100px] flex justify-center items-center"
-        >
+      <div className="flex flex-none items-center justify-center">
+        <Link href="/login" className="flex h-9 w-[100px] transform items-center justify-center rounded-md border border-[#2A2832] px-3 py-1 text-white transition-all hover:border-white">
           <div className="text-sm">登录</div>
         </Link>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
