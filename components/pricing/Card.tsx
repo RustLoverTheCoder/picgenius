@@ -13,7 +13,7 @@ export interface PricingCardProps {
 
 const PricingCard = (item: PricingCardProps) => {
   return (
-    <div className={clsx('overflow-hidden rounded-lg border bg-base-200 border-[#3F3F46]', !item.active && 'md:scale-90')}>
+    <div className={clsx('overflow-hidden rounded-lg border bg-base-200 border-[#3F3F46] hover:border-white transition-all', !item.active && 'md:scale-90')}>
       <div className={clsx('p-8', item.active && Style['gradient-bg'])}>
         <h5 className="mb-2 text-3xl font-bold capitalize text-white">{item.title}</h5>
         <h6 className="mb-2 capitalize text-white">{item.subTitle}</h6>
