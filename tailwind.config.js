@@ -10,7 +10,11 @@ module.exports = {
     "./ui/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'base-100': '#05020E',
+      },
+    },
   },
   plugins: [],
 }

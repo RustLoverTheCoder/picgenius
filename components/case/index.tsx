@@ -8,7 +8,7 @@ const Case: React.FC<CaseProps> = () => {
   const list = ["Animals", "Anime","Food"];
   return (
     <>
-      <div className="sticky top-[60px] z-20 bg-[#05020E]">
+      <div className="sticky top-[60px] z-20 bg-base-100">
         <div className="overflow-x-auto scrollbar-hide max-md:snap-x scroll-px-3 max-md:pb-3 max-md:border-b max-md:mb-2 border-[#1E1B26]">
           <div className="gap-3 max-md:gap-6 flex md:px-10 mt-3 md:mt-4 md:pb-4 transition-all duration-300">
             <CaseButton text="All" isActive={activeTab === "All"} />

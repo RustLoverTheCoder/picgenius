@@ -10,9 +10,7 @@ const Header: FC = () => {
     >
       <div className="flex items-center h-full md:gap-4">
         <div
-          className="border border-[#2A2832] flex-shrink md:w-[999rem] flex-grow items-start rounded-lg
-          text-[#F3F2F3] self-start ml-2 font-normal transition-all
-          md:max-w-[333px] bg-[#05020E]"
+          className="border border-[#2A2832] flex-shrink md:w-[999rem] flex-grow items-start rounded-lg text-[#F3F2F3] self-start ml-2 font-normal transition-all md:max-w-[333px] bg-base-100"
         >
           <div className="flex items-center gap-2 px-0.5">
             <div className="pointer-events-none flex items-center pl-2 h-9 shrink-0">
