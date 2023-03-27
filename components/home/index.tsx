@@ -2,7 +2,6 @@
 
 import clsx from "clsx";
 import Link from "next/link";
-import HomeLayout from "../layout";
 import Style from "./index.module.css";
 import Case from "../case";
 import PhotoList from "../photoList";
@@ -180,7 +179,7 @@ const HomeUi = () => {
     },
   ];
   return (
-    <HomeLayout>
+    <>
       <section
         className={clsx(
           "flex justify-center items-center text-white py-20 md:pt-24 md:pb-32 lg:pt-48 lg:pb-56 relative px-8",
@@ -207,7 +206,7 @@ const HomeUi = () => {
       <div className="w-full pt-2 px-5 md:px-10">
         <PhotoList photos={photoList} />
       </div>
-    </HomeLayout>
+    </>
   );
 };
 

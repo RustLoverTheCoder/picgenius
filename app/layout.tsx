@@ -1,4 +1,5 @@
 import "./globals.css";
+import HomeLayout from "@/components/layout";
 
 export const metadata = {
   title: "将您的想法变成艺术 | PicGenius",
@@ -14,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-hans">
-      <body>{children}</body>
+      <body>
+        <HomeLayout>{children}</HomeLayout>
+      </body>
     </html>
   );
 }
