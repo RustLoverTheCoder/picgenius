@@ -1,7 +1,10 @@
 import React, { FC, Suspense } from "react";
 import Header from "../header";
+interface Props {
+  children: React.ReactNode;
+}
 
-const HomeLayout = ({ children }: any) => {
+const HomeLayout: FC<Props> = ({ children }) => {
   return (
     <div className="w-full h-auto min-h-full">
       <Header />

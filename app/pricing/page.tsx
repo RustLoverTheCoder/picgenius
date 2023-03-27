@@ -1,8 +1,10 @@
+import PricingPage from "@/components/pricing";
+
 const Page = () => {
   return (
-    <div>
-      <div>pricing</div>
-    </div>
+    <>
+      <PricingPage />
+    </>
   );
 };
 
