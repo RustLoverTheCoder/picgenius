@@ -75,15 +75,15 @@ const PricingPage = () => {
                           <tbody className="divide-y divide-zinc-700  bg-zinc-900 text-white">
                             <tr>
                               <th className="w-1/2 whitespace-nowrap px-6 py-4 text-left text-sm font-normal">Text To Image</th>
-                              <th className="w-1/2 whitespace-nowrap px-6 py-4 text-left text-sm font-normal">0.05</th>
+                              <th className="w-1/2 whitespace-nowrap px-6 py-4 text-left text-sm font-normal">5</th>
                             </tr>
                             <tr>
                               <th className="w-1/2 whitespace-nowrap px-6 py-4 text-left text-sm font-normal">Image To Image</th>
-                              <th className="w-1/2 whitespace-nowrap px-6 py-4 text-left text-sm font-normal">0.05</th>
+                              <th className="w-1/2 whitespace-nowrap px-6 py-4 text-left text-sm font-normal">5</th>
                             </tr>
                             <tr>
                               <th className="w-1/2 whitespace-nowrap px-6 py-4 text-left text-sm font-normal">Voice To Image</th>
-                              <th className="w-1/2 whitespace-nowrap px-6 py-4 text-left text-sm font-normal">0.05</th>
+                              <th className="w-1/2 whitespace-nowrap px-6 py-4 text-left text-sm font-normal">5</th>
                             </tr>
                           </tbody>
                         </table>
