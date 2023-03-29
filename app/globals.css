@@ -17,6 +17,10 @@
   input {
     @apply outline-none;
   }
+
+  textarea {
+    
+  }
 }
 
 * {
