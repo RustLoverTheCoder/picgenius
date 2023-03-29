@@ -1,9 +1,9 @@
 const Page = () => {
   return (
-    <div>
+    <div className="w-full">
       <div>playground</div>
     </div>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page

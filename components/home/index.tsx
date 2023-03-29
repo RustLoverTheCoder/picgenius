@@ -12,13 +12,6 @@ const HomeUi = () => {
     {
       title: "",
       imageUrl:
-        "https://storage.googleapis.com/pai-images/77eb31858745491ab5df3b692ddabfc4.jpeg",
-      thumbnail:
-        "https://storage.googleapis.com/pai-images/77eb31858745491ab5df3b692ddabfc4.jpeg",
-    },
-    {
-      title: "",
-      imageUrl:
         "https://cdn.midjourney.com/5d67b582-b942-4ee0-b8ea-de640768ecdb/0_1_640_N.webp",
       thumbnail:
         "https://cdn.midjourney.com/5d67b582-b942-4ee0-b8ea-de640768ecdb/0_1_32_N.webp",
@@ -92,13 +85,6 @@ const HomeUi = () => {
         "https://cdn.midjourney.com/9e77177a-5294-4ce6-8953-e632a24fb827/0_2_640_N.webp",
       thumbnail:
         "https://cdn.midjourney.com/9e77177a-5294-4ce6-8953-e632a24fb827/0_2_32_N.webp",
-    },
-    {
-      title: "",
-      imageUrl:
-        "https://storage.googleapis.com/pai-images/77eb31858745491ab5df3b692ddabfc4.jpeg",
-      thumbnail:
-        "https://storage.googleapis.com/pai-images/77eb31858745491ab5df3b692ddabfc4.jpeg",
     },
     {
       title: "",
