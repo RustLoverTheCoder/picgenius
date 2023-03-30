@@ -1,6 +1,7 @@
 const Page = () => {
   return (
-    <div className="flex h-full w-full overflow-hidden">
+    <div className="flex w-screen h-screen overflow-hidden">
+      <div className=""></div>
       123
     </div>
   )
