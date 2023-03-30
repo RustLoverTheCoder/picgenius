@@ -2,7 +2,8 @@ import { FC } from 'react'
 import Link from 'next/link'
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 
-const Header: FC = () => {
+const Header: FC = (props) => {
+  console.log('props', props)
   return (
     <header
       className="fixed top-0 left-0 z-40 flex h-[60px] w-full max-w-full items-start justify-between gap-4 border-gray-900 bg-base-100 px-5 py-2.5"
@@ -18,7 +19,10 @@ const Header: FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-none items-center justify-center">
+      <div className="flex flex-none items-center justify-center space-x-2">
+        <Link href="/pricing" className="flex h-9 w-[100px] transform items-center justify-center rounded-md border border-[#2A2832] px-3 py-1 text-white transition-all hover:border-white">
+          <div className="text-sm">定价</div>
+        </Link>
         <Link href="/login" className="flex h-9 w-[100px] transform items-center justify-center rounded-md border border-[#2A2832] px-3 py-1 text-white transition-all hover:border-white">
           <div className="text-sm">登录</div>
         </Link>
