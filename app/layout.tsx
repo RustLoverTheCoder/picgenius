@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-hans">
-      <body>
+      <body className="bg-base-100 text-white">
         <HomeLayout>{children}</HomeLayout>
       </body>
     </html>

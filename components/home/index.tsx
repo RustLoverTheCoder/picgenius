@@ -18,7 +18,7 @@ const HomeUi = () => {
           <h1 className="max-w-[10.7em] text-center font-[590] leading-[1.1] max-lg:text-5xl max-md:text-3xl lg:text-[64px] ">
             让 AI 将您的想法 <br /> 变为艺术
           </h1>
-          <Link href="/playground" className={clsx('flex w-auto transform items-center justify-center !rounded-xl !py-[9px] !px-4 !font-[590] transition-all md:!py-3 md:!px-6', Style.homeButton)}>
+          <Link href="/create" className={clsx('flex w-auto transform items-center justify-center !rounded-xl !py-[9px] !px-4 !font-[590] transition-all md:!py-3 md:!px-6', Style.homeButton)}>
             <div className="text-black">免费开始</div>
           </Link>
         </div>
