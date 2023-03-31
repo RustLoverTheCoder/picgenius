@@ -10,7 +10,7 @@ const CreatePage = () => {
           <form className="mt-6 mb-2.5 w-full rounded-md bg-white">
             <textarea maxLength={480} placeholder="请写您的咒语prompt" className="w-full resize-none rounded-md bg-[unset] py-3 px-6 text-[#111] outline-none" />
           </form>
-          <button className="h-10 w-full rounded-md bg-primary-100">
+          <button className="h-10 w-full rounded-md bg-pink-400">
             <div className="text-sm font-semibold text-white">创建</div>
           </button>
         </div>
